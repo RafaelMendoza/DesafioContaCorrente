@@ -1,0 +1,27 @@
+﻿@model DesafioStone.Domain.Models.Extrato
+
+
+<div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Data</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Saldo</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Transacoes)
+            {
+                <tr>
+                    <td>@item.DataTransacao</td>
+                    <td>@item.Valor</td>
+                    <td>@item.TipoTransacao.ToString()</td>
+                    <td>@item.Saldo</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
