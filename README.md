@@ -10,7 +10,7 @@ Endpoint: POST - api/ContaBancaria/RealizarSaque
 Espera Receber:[FromQuery] ContaId (Int), [FromBody] Saque (SaqueViewModel)  
 Retorna: Uma mensagem de sucesso ou erro em formato de String dentro de um HTTP Response com Status Code equivalente.  
 
-**RealizarDeposito**  
-Endpoint: GET - api/ContaBancaria/RealizarDeposito  
-Espera Receber: ContaId (INT), DataInicio (DateTime), DataFim (DateTime)
+**ObterExtrato**  
+Endpoint: GET - api/ContaBancaria/ObterExtrato  
+Espera Receber: ContaId (INT), DataInicio (DateTime), DataFim (DateTime)  
 Retorna: Uma mensagem de sucesso ou erro em formato de String dentro de um HTTP Response com Status Code equivalente.  
